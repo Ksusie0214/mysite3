@@ -16,6 +16,17 @@ public class UserVo {
 		
 	}
 	
+	public UserVo(String id) {
+		super();
+		this.id = id;
+	}
+	
+	public UserVo(String id, String pw) {
+		super();
+		this.id = id;
+		this.pw = pw;
+	}
+	
 	public UserVo( String id, String pw, String name, String gender) {
 		super();
 		this.id = id;

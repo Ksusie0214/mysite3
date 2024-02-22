@@ -64,7 +64,7 @@ public class GuestController extends HttpServlet {
 			guestDao.insertGuest(guestVo);
 
 			// 리다이렉트
-			WebUtil.forward(request, response, "/WEB-INF/views/guest/addList.jsp");
+			WebUtil.redirect(request, response, "/mysite3/guest?action=eform");
 			
 			
 		}else if("delete".equals(action)) {
